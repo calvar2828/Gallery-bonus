@@ -1,0 +1,74 @@
+/* html{
+    border: 3px red solid;
+}
+body{
+    border: 2px aqua solid;
+} */
+h1{
+    display: flex;
+    font-family: "Lucida Console", Monaco, monospace;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin: auto;
+}
+#container{
+    display: grid;
+    grid-template-columns: auto ; /* If i want more columns i can put other auto auto auto with this amount there's going to be 3 columns*/
+    grid-template-rows: auto auto;
+    justify-items: center;
+    grid-row-gap: 5vh;
+}
+#picture img{
+
+    grid-column: 1; 
+    grid-row: 1; 
+    height: 50vh;
+    width: 50vw;
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    
+    
+}
+#picture img:hover{
+    
+        color: white;
+        background-color: black;
+        box-shadow: 0 1vh 2vh 0 rgba(0, 0, 0, 0.24), 0 2vh 7vh 0 rgba(0, 0, 0, 0.60);
+    
+}
+
+#buttons{
+
+    grid-column: 1;
+    grid-row: 2;
+    padding: 50px;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#previous, #next {
+
+    margin: 0 40px;
+    padding: 10px 20px; 
+    color: #FFF;
+    border: 2px solid black;
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 black;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    color: white;
+}
+#previous:hover, #next:hover {
+    box-shadow: inset 0 100px 0 0 black;
+}
